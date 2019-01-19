@@ -11,7 +11,7 @@ router.get('/', async (ctx) => {
 
 router.post('/demo', async (ctx) => {
   const { body } = ctx.request
-  if (body.password === 'demopassword' && body.hook_name === 'tag_push_hooks') {
+  if (body.password === 'demopassword') {
     demoFun()
   }
   ctx.body = {
