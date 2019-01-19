@@ -1,3 +1,4 @@
+const mkdirp = require('mkdirp')
 const tools = require('../utils/tools')
 
 const projectDir = '/tmp/webhook_service_demo'
@@ -5,6 +6,7 @@ const gitRepo = 'git@github.com:Blacate/webhook-service-demo.git'
 const log = []
 
 const demoFun = () => {
+  mkdirp.sync(projectDir)
   console.log('[INFO] Start executing the script')
   tools.fetchGitUpdate(projectDir, gitRepo)
     .then(() => {
