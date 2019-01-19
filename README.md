@@ -12,7 +12,7 @@
     ├── config.js // 应用配置文件
     ├── router.js // 路由定义文件
     ├── scripts   // 存放需要执行的node脚本文件
-    │   └── demo.js 
+    │   └── demo.js
     └── utils
         └── tools.js // 常用函数的封装
 ```
@@ -23,6 +23,7 @@
 + `simple-git` 在node中执行git命令
 + `node-cmd` 在node中执行命令行命令
 + `bluebird` 将`node-cmd` 的命令转为promise
++ `mkdirp` 用于创建目录
 
 ### npm script
 
